@@ -1,0 +1,20 @@
+# Explanation writer documents
+*.odt
+*.docx
+
+# VS code
+.vscode/
+
+# Zed files
+.zed/
+
+# Scala/ JVM compiled output
+*.class
+*.jar
+
+# sbt build output
+target/
+
+# Scala tooling 
+.metals/
+.bsp/
