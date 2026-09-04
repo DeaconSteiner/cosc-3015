@@ -1,0 +1,54 @@
+\documentclass{article}
+\usepackage{amsmath, amssymb}
+\usepackage{graphicx}
+\usepackage{float}
+\begin{document}
+	\section{SCASTIE}
+	Here I used SCASTIE to run the provided program.
+	
+	\begin{figure}[H]
+		\centering
+		\includegraphics[width=0.9\textwidth]{scastie_image.png}
+		\caption{SCASTIE program output for initial program}
+	\end{figure}
+	
+	Getting SCASTIE running was no real issue for me. It was easy to find and made writing code very easy.
+	
+		\newpage
+	
+	\begin{figure}[H]
+		\centering
+		\includegraphics[width=0.9\textwidth]{scastie_image_2.png}
+		\caption{SCASTIE program output for updated sum}
+	\end{figure}
+	
+	This program calculates the sum of integers from 21 through 137. The correctness of this program can be verified by looking at the closed-form formula for the sum of consecutive integers.
+	
+	\[
+	\sum_{n=21}^{137}n = \frac{137(137+1)}{2} - \frac{20(20+1)}{2} 
+	\] 
+	
+	which comes out to:
+	\[
+	= \frac{18906}{2} - \frac{420}{2}
+	= 9453 - 210
+	= 9243
+	\]
+	
+	\newpage
+	
+	\begin{figure}[H]
+		\centering
+		\includegraphics[width=0.9\textwidth]{zed_image.png}
+		\caption{Scala program on local machine}
+	\end{figure}
+	
+	\begin{figure}[H]
+		\centering
+		\includegraphics[width=0.9\textwidth]{output.png}
+		\caption{Output for local program}
+	\end{figure}
+	
+	Installing Scala wasn't difficult, although I did run into a small issue after getting it installed initially. Scala and Coursier had to be manually added to my PATH so that their commands would be recognized by the terminal.
+	
+\end{document}

@@ -2,6 +2,12 @@
 *.odt
 *.docx
 
+# Homework images
+*.png
+
+# Submission zips
+*.zip
+
 # VS code
 .vscode/
 
@@ -12,9 +18,28 @@
 *.class
 *.jar
 
-# sbt build output
-target/
-
-# Scala tooling 
+# Scala build artifacts
+.scala-build/
+.bloop/
+*.tasty
 .metals/
 .bsp/
+target/
+
+# LaTeX artifacts
+*.aux
+*.bbl
+*.bcf
+*.blg
+*.fdb_latexmk
+*.fls
+*.lof
+*.log
+*.lot
+*.nav
+*.out
+*.run.xml
+*.snm
+*.synctex.gz
+*.toc
+*.vrb
