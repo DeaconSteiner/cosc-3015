@@ -1,0 +1,34 @@
+\documentclass{article}
+\usepackage{amsmath, amssymb}
+\usepackage{graphicx}
+\usepackage{float}
+
+\begin{document}
+	\section{Program}
+	
+	\begin{figure}[H]
+		\centering
+		\includegraphics[width=0.9\textwidth]{program.png}
+		\caption{Assignment Solution}
+	\end{figure}
+	
+	This program was relatively easy to implement. The only piece I struggled with was while learning about tail recursion and accumulators. This was a fairly new concept for me coming from more imperative languages.
+	
+	The program itself is a fairly standard general solution for radix conversion. It repeatedly divides the target integer by the desired base, prepending the remainders to the acc string, which collects the digits from least to most significant, hence prepending.
+	
+	I took advantage of Scala's strong pattern matching to match on the value to ensure the edge cases were handled properly
+	
+	This is a very strong example of using functional principles, both \texttt{radixConvert} and the \texttt{convert} helper are pure, and \texttt{convert} even takes advantage of an accumulator to avoid mutability issues and ensures full tail recursion.
+	
+	\newpage
+	
+	\begin{figure}[H]
+		\centering
+		\includegraphics[width=0.9\textwidth]{output.png}
+		\caption{Program output}
+	\end{figure}
+	
+	This output shows that the desired outcome for each case, shown in the comments of the program, is actually produced.
+	
+	
+\end{document}
