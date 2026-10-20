@@ -1,0 +1,29 @@
+\documentclass{article}
+\usepackage{amsmath, amssymb}
+\usepackage{graphicx}
+\usepackage{float}
+
+\begin{document}
+	\section{Program}
+	
+	\begin{figure}[H]
+		\centering
+		\includegraphics[width=0.9\textwidth]{program.png}
+		\caption{Assignment Solution}
+	\end{figure}
+	
+	This program was relatively easy to adapt. I used pattern matching along with filter to make \texttt{sumIt} a very functional solution to this problem. I use a parity parameter to determine whether the function should sum the whole list (parity = 0) the evens (parity = 1) or the odds (parity = 2). I do the split using \texttt{filter} which is a very functional way to build a sublist that follows the needed criteria.
+	
+	
+	
+	\newpage
+	
+	\begin{figure}[H]
+		\centering
+		\includegraphics[width=0.9\textwidth]{prog_output.png}
+		\caption{Program output}
+	\end{figure}
+	
+	This output shows that the threaded option is actually slower (sometimes by more than 20 ms) but this is likely explained by the fact that \texttt{sum} is fairly efficient for small ranges and the overhead of scheduling and synchronizing concurrent tasks can outweigh the benefits of parallel execution.
+	
+\end{document}
